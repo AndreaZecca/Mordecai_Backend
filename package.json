@@ -1,0 +1,35 @@
+{
+  "name": "mordecai-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "serve": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jest-sonar-reporter": "^2.0.0",
+    "multilang-sentiment": "^2.0.0",
+    "text-cleaner": "^1.2.1",
+    "twitter-api-v2": "^1.6.5"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^27.4.3",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.1.6"
+  },
+  "jest": {
+    "coverageDirectory": "coverage",
+    "testResultsProcessor": "jest-sonar-reporter",
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}

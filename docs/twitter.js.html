@@ -1,0 +1,368 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+      twitter.js - Documentation
+  </title>
+
+  <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+  <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+  
+
+  
+
+  <!-- start Mixpanel -->
+  <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+  0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+  for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+  mixpanel.init("1919205b2da72e4da3b9b6639b444d59");</script>
+  <!-- end Mixpanel -->
+</head>
+
+<body>
+  <svg style="display: none;">
+    <defs>
+      <symbol id="linkIcon" fill="#706d77" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger" class="navicon-button x">
+    <div class="navicon"></div>
+  </label>
+
+  <label for="nav-trigger" class="overlay"></label>
+
+  <div class="top-nav-wrapper">
+    <ul>
+      <li >
+        <a href="index.html">
+          
+            <svg fill="#6D6D6D" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          
+          
+        </a>
+      </li>
+
+      
+
+    </ul>
+  </div>
+
+  <nav>
+    <h3 class="reference-title">
+      Braintree SDK Client Reference
+    </h3>
+
+    
+
+    <h3>Classes</h3><ul><li id="Contest-nav"><a href="Contest.html">Contest</a><ul class='methods'><li data-type="method" id="Contest-searchContest-nav"><a href="Contest.html#.searchContest">searchContest</a></li><li data-type="method" id="Contest-abort-nav"><a href="Contest.html#abort">abort</a></li><li data-type="method" id="Contest-addProposal-nav"><a href="Contest.html#addProposal">addProposal</a></li><li data-type="method" id="Contest-addVoter-nav"><a href="Contest.html#addVoter">addVoter</a></li><li data-type="method" id="Contest-fetchProposals-nav"><a href="Contest.html#fetchProposals">fetchProposals</a></li><li data-type="method" id="Contest-fetchVotes-nav"><a href="Contest.html#fetchVotes">fetchVotes</a></li><li data-type="method" id="Contest-getVotes-nav"><a href="Contest.html#getVotes">getVotes</a></li><li data-type="method" id="Contest-init-nav"><a href="Contest.html#init">init</a></li><li data-type="method" id="Contest-live-nav"><a href="Contest.html#live">live</a></li></ul></li><li id="Core-nav"><a href="Core.html">Core</a><ul class='methods'><li data-type="method" id="Core-abortStream-nav"><a href="Core.html#abortStream">abortStream</a></li><li data-type="method" id="Core-createQueryV2-nav"><a href="Core.html#createQueryV2">createQueryV2</a></li><li data-type="method" id="Core-dayTweetCount-nav"><a href="Core.html#dayTweetCount">dayTweetCount</a></li><li data-type="method" id="Core-getGeo-nav"><a href="Core.html#getGeo">getGeo</a></li><li data-type="method" id="Core-getUserInfo-nav"><a href="Core.html#getUserInfo">getUserInfo</a></li><li data-type="method" id="Core-search-nav"><a href="Core.html#search">search</a></li><li data-type="method" id="Core-sentiment-nav"><a href="Core.html#sentiment">sentiment</a></li><li data-type="method" id="Core-singleTweet-nav"><a href="Core.html#singleTweet">singleTweet</a></li><li data-type="method" id="Core-stream-nav"><a href="Core.html#stream">stream</a></li><li data-type="method" id="Core-termcloud-nav"><a href="Core.html#termcloud">termcloud</a></li></ul></li><li id="Paginator-nav"><a href="Paginator.html">Paginator</a><ul class='methods'><li data-type="method" id="Paginator-getNewest-nav"><a href="Paginator.html#getNewest">getNewest</a></li><li data-type="method" id="Paginator-getOldest-nav"><a href="Paginator.html#getOldest">getOldest</a></li><li data-type="method" id="Paginator-getTweets-nav"><a href="Paginator.html#getTweets">getTweets</a></li><li data-type="method" id="Paginator-handleError-nav"><a href="Paginator.html#handleError">handleError</a></li><li data-type="method" id="Paginator-next-nav"><a href="Paginator.html#next">next</a></li><li data-type="method" id="Paginator-prev-nav"><a href="Paginator.html#prev">prev</a></li></ul></li><li id="Participant-nav"><a href="Participant.html">Participant</a><ul class='methods'><li data-type="method" id="Participant-addVote-nav"><a href="Participant.html#addVote">addVote</a></li><li data-type="method" id="Participant-getProposal-nav"><a href="Participant.html#getProposal">getProposal</a></li><li data-type="method" id="Participant-getVotes-nav"><a href="Participant.html#getVotes">getVotes</a></li><li data-type="method" id="Participant-removeVote-nav"><a href="Participant.html#removeVote">removeVote</a></li></ul></li><li id="Player-nav"><a href="Player.html">Player</a><ul class='methods'><li data-type="method" id="Player-addAnswer-nav"><a href="Player.html#addAnswer">addAnswer</a></li><li data-type="method" id="Player-fetchUsername-nav"><a href="Player.html#fetchUsername">fetchUsername</a></li><li data-type="method" id="Player-getAnswer-nav"><a href="Player.html#getAnswer">getAnswer</a></li><li data-type="method" id="Player-getUsername-nav"><a href="Player.html#getUsername">getUsername</a></li></ul></li><li id="Query-nav"><a href="Query.html">Query</a><ul class='methods'><li data-type="method" id="Query-addField-nav"><a href="Query.html#addField">addField</a></li><li data-type="method" id="Query-appendString-nav"><a href="Query.html#appendString">appendString</a></li><li data-type="method" id="Query-get-nav"><a href="Query.html#get">get</a></li></ul></li><li id="QueryBuilder-nav"><a href="QueryBuilder.html">QueryBuilder</a><ul class='methods'><li data-type="method" id="QueryBuilder-build-nav"><a href="QueryBuilder.html#build">build</a></li><li data-type="method" id="QueryBuilder-setExpansion-nav"><a href="QueryBuilder.html#setExpansion">setExpansion</a></li><li data-type="method" id="QueryBuilder-setGeocode-nav"><a href="QueryBuilder.html#setGeocode">setGeocode</a></li><li data-type="method" id="QueryBuilder-setKeyword-nav"><a href="QueryBuilder.html#setKeyword">setKeyword</a></li><li data-type="method" id="QueryBuilder-setUsername-nav"><a href="QueryBuilder.html#setUsername">setUsername</a></li></ul></li><li id="queryDirector-nav"><a href="queryDirector.html">queryDirector</a></li><li id="Question-nav"><a href="Question.html">Question</a><ul class='methods'><li data-type="method" id="Question-checkDeadline-nav"><a href="Question.html#checkDeadline">checkDeadline</a></li><li data-type="method" id="Question-checkSolution-nav"><a href="Question.html#checkSolution">checkSolution</a></li><li data-type="method" id="Question-getDeadline-nav"><a href="Question.html#getDeadline">getDeadline</a></li><li data-type="method" id="Question-getName-nav"><a href="Question.html#getName">getName</a></li><li data-type="method" id="Question-getOptions-nav"><a href="Question.html#getOptions">getOptions</a></li><li data-type="method" id="Question-getSolution-nav"><a href="Question.html#getSolution">getSolution</a></li><li data-type="method" id="Question-getText-nav"><a href="Question.html#getText">getText</a></li><li data-type="method" id="Question-searchSolution-nav"><a href="Question.html#searchSolution">searchSolution</a></li><li data-type="method" id="Question-setSolution-nav"><a href="Question.html#setSolution">setSolution</a></li></ul></li><li id="Trivia-nav"><a href="Trivia.html">Trivia</a><ul class='methods'><li data-type="method" id="Trivia-checkTrivia-nav"><a href="Trivia.html#.checkTrivia">checkTrivia</a></li><li data-type="method" id="Trivia-abort-nav"><a href="Trivia.html#abort">abort</a></li><li data-type="method" id="Trivia-addPlayer-nav"><a href="Trivia.html#addPlayer">addPlayer</a></li><li data-type="method" id="Trivia-addQuestion-nav"><a href="Trivia.html#addQuestion">addQuestion</a></li><li data-type="method" id="Trivia-fetchPlayers-nav"><a href="Trivia.html#fetchPlayers">fetchPlayers</a></li><li data-type="method" id="Trivia-fetchQuestions-nav"><a href="Trivia.html#fetchQuestions">fetchQuestions</a></li><li data-type="method" id="Trivia-getPlayers-nav"><a href="Trivia.html#getPlayers">getPlayers</a></li><li data-type="method" id="Trivia-getQuestionResults-nav"><a href="Trivia.html#getQuestionResults">getQuestionResults</a></li><li data-type="method" id="Trivia-getQuestions-nav"><a href="Trivia.html#getQuestions">getQuestions</a></li><li data-type="method" id="Trivia-getScores-nav"><a href="Trivia.html#getScores">getScores</a></li><li data-type="method" id="Trivia-init-nav"><a href="Trivia.html#init">init</a></li><li data-type="method" id="Trivia-live-nav"><a href="Trivia.html#live">live</a></li></ul></li><li id="Twitter-nav"><a href="Twitter.html">Twitter</a><ul class='methods'><li data-type="method" id="Twitter-contest-nav"><a href="Twitter.html#contest">contest</a></li><li data-type="method" id="Twitter-countTweets-nav"><a href="Twitter.html#countTweets">countTweets</a></li><li data-type="method" id="Twitter-geo-nav"><a href="Twitter.html#geo">geo</a></li><li data-type="method" id="Twitter-geoId-nav"><a href="Twitter.html#geoId">geoId</a></li><li data-type="method" id="Twitter-nextTweets-nav"><a href="Twitter.html#nextTweets">nextTweets</a></li><li data-type="method" id="Twitter-request-nav"><a href="Twitter.html#request">request</a></li><li data-type="method" id="Twitter-search-nav"><a href="Twitter.html#search">search</a></li><li data-type="method" id="Twitter-sentiment-nav"><a href="Twitter.html#sentiment">sentiment</a></li><li data-type="method" id="Twitter-singleTweet-nav"><a href="Twitter.html#singleTweet">singleTweet</a></li><li data-type="method" id="Twitter-stream-nav"><a href="Twitter.html#stream">stream</a></li><li data-type="method" id="Twitter-termcloud-nav"><a href="Twitter.html#termcloud">termcloud</a></li><li data-type="method" id="Twitter-trivia-nav"><a href="Twitter.html#trivia">trivia</a></li><li data-type="method" id="Twitter-user-nav"><a href="Twitter.html#user">user</a></li><li data-type="method" id="Twitter-userById-nav"><a href="Twitter.html#userById">userById</a></li><li data-type="method" id="Twitter-userTweets-nav"><a href="Twitter.html#userTweets">userTweets</a></li></ul></li><li id="User-nav"><a href="User.html">User</a><ul class='methods'><li data-type="method" id="User-getId-nav"><a href="User.html#getId">getId</a></li></ul></li><li id="V1Builder-nav"><a href="V1Builder.html">V1Builder</a><ul class='methods'><li data-type="method" id="V1Builder-setExpansion-nav"><a href="V1Builder.html#setExpansion">setExpansion</a></li><li data-type="method" id="V1Builder-setGeocode-nav"><a href="V1Builder.html#setGeocode">setGeocode</a></li><li data-type="method" id="V1Builder-setKeyword-nav"><a href="V1Builder.html#setKeyword">setKeyword</a></li><li data-type="method" id="V1Builder-setUsername-nav"><a href="V1Builder.html#setUsername">setUsername</a></li></ul></li><li id="V2Builder-nav"><a href="V2Builder.html">V2Builder</a><ul class='methods'><li data-type="method" id="V2Builder-setExpansion-nav"><a href="V2Builder.html#setExpansion">setExpansion</a></li><li data-type="method" id="V2Builder-setGeocode-nav"><a href="V2Builder.html#setGeocode">setGeocode</a></li><li data-type="method" id="V2Builder-setKeyword-nav"><a href="V2Builder.html#setKeyword">setKeyword</a></li><li data-type="method" id="V2Builder-setUsername-nav"><a href="V2Builder.html#setUsername">setUsername</a></li></ul></li><li id="Voter-nav"><a href="Voter.html">Voter</a><ul class='methods'><li data-type="method" id="Voter-addVote-nav"><a href="Voter.html#addVote">addVote</a></li></ul></li></ul>
+  </nav>
+
+  <div id="main">
+    
+      <h1 class="page-title">
+        twitter.js
+      </h1>
+    
+
+    
+      
+
+<section>
+  <article>
+    <pre class="prettyprint source linenums"><code>import axios from 'axios'
+
+/** Interface with Mordecai back-end */
+class Twitter {
+  handleError (err) {
+    console.log(err)
+  }
+
+  constructor () {
+    // Base urls
+    this.baseURL = 'https://site202137.tw.cs.unibo.it/api/'
+    this.v2Url = '2/'
+
+    // V1 urls
+    this.api = axios.create({ baseURL: this.baseURL })
+    this.searchUrl = 'search/tweets'
+    this.geoUrl = 'geo/search'
+    this.userUrl = 'user'
+    this.userTweetsUrl = 'statuses/user_timeline'
+    this.tweetUrl = 'statuses/show'
+    this.geoIdUrl = 'geo/id'
+    this.streamUrl = 'stream'
+    // V2 urls
+    this.countV2Url = this.v2Url + 'tweets/counts/recent'
+    this.searchV2Url = this.v2Url + 'tweets/search/all'
+    this.userByIdUrl = this.v2Url + 'user/'
+
+    // Custom urls
+    this.sentimentUrl = 'sentiment'
+    this.termCloudUrl = 'termcloud'
+    this.contestUrl = 'contest'
+    this.triviaUrl = 'trivia'
+  }
+
+  /**
+  * @summary Generic request function
+  * @param {string} url - Tweet back-end url
+  * @param {Object} query - Tweet query object
+  *
+  * @returns Tweet response body
+  */
+
+  async request (url, query) {
+    try {
+      const res = await this.api.get(url, { params: query })
+      if (res.status === 200) {
+        return res.data
+      }
+    } catch (err) {
+      this.handleError(err)
+    }
+  }
+
+  /**
+  * @summary Get tweets place informations
+  * @param {Object} query - Tweet query object, should include lat-lng or a query text
+  *
+  * @returns Array of possible locations
+  */
+  async geo (query) {
+    return await this.request(this.geoUrl, query)
+  }
+
+  /**
+  * @summary Get tweets of the given user
+  * @param {string} username - Tweet username
+  * @param {Object} query - Tweet query object
+  *
+  * @returns Array of tweets
+  */
+  async user (username, query) {
+    return await this.request(this.userUrl + `/${username}`, query)
+  }
+
+  /**
+  * @summary Get user info
+  * @param {string} username - User id
+  * @param {Object} query - Tweet query object
+  *
+  * @returns User information
+  */
+  async userById (id, query) {
+    return await this.request(this.userByIdUrl + `${id}`, query)
+  }
+
+  /**
+  * @summary Basic tweet search.
+  * @param {Object} query - Tweet query object
+  *
+  * @returns Tweets of the given user
+  */
+  async search (query) {
+    return await this.request(this.searchV2Url, query)
+  }
+
+  /**
+  * @summary Start a stream using V1 API
+  * @param {string} query - Keyword to search.
+  * @param {function} callback - Callback to invoke when new tweets are delivered
+  * @param {function} errorCallback - Callback to invoke when an error occurs
+  *
+  * @return {Query} - Query object
+  */
+  stream (query, callback, errorCallback) {
+    const regExHash = /#/g
+    const regExTag = /@/g
+    const parameters = Object.entries(query).map(([k, v]) => `${k}=${v.replace(regExHash, '%23').replace(regExTag, '%35')}`).join('&amp;')
+    const abortController = new AbortController()
+    let done = false
+
+    fetch(this.baseURL + this.streamUrl + '?' + parameters, { signal: abortController.signal })
+      .then(async (response) => {
+        const reader = response.body.getReader()
+        let buffer = ''
+
+        while (!done) {
+          const result = await reader.read()
+          done = done || result.done
+
+          // It's possible to receive more than one tweet at once,
+          // so we split them
+          buffer += new TextDecoder().decode(result.value)
+
+          let curlyCount = 0
+          let insideQuotes = false
+
+          for (let i = 0; i &lt; buffer.length; i++) {
+            if (buffer[i] === '\\') {
+              i += 1
+              if (i >= buffer.length) {
+                break
+              }
+              continue
+            }
+            if (buffer[i] === '"') {
+              insideQuotes = !insideQuotes
+            }
+
+            if (!insideQuotes) {
+              if (buffer[i] === '{') {
+                curlyCount++
+              }
+
+              if (buffer[i] === '}') {
+                curlyCount--
+
+                if (curlyCount === 0) {
+                  const decodedTweet = JSON.parse(buffer.substring(0, i + 1))
+                  buffer = buffer.substring(i + 1)
+                  i = -1
+                  if (!decodedTweet.type || decodedTweet.type !== 'keep-alive') {
+                    callback(decodedTweet)
+                  } else {
+                    console.log('keep-alive')
+                  }
+                }
+              }
+            }
+          }
+        }
+      })
+      .catch(errorCallback)
+
+    // This callback will abort the stream
+    return () => {
+      done = true
+      abortController.abort()
+    }
+  }
+
+  /**
+  * @summary Get the user timeline.
+  * @param {Object} query - Tweet query object, should include user_id
+  *
+  * @returns Tweets of the given user
+  */
+  async userTweets (query) {
+    return { statuses: await this.request(this.userTweetsUrl, query) }
+  }
+
+  /**
+  * @summary Get the next page of tweets.
+  * @param {string} endpoint - Endpoint tha provides the next page
+  * @param {Object} query - Tweet query object, should include max_id or since_id
+  *
+  * @returns Next tweets page
+  */
+  async nextTweets (endpoint, query) {
+    return await this[endpoint](query)
+  }
+
+  /**
+  * @summary Get a single tweet
+  * @param {string} id - Tweet id
+  * @returns - Tweet object
+  */
+  async singleTweet (id) {
+    return await this.request(this.tweetUrl + `/${id}`)
+  }
+
+  /**
+  * @summary Count how many tweets corresponds to the query parameter
+  * @param {Object} query - Tweet query
+  * @returns - Tweet count object see
+  */
+  async countTweets (query) {
+    return await this.request(this.countV2Url, query)
+  }
+
+  /**
+  * @summary Get lat-lng information about the given place
+  * @param {string} id - Tweet place id
+  * @returns - Array of [lat, lng]
+  */
+  async geoId (id) {
+    return await this.request(this.geoIdUrl + `/${id}`)
+  }
+
+  /**
+  * @summary Returns the sentiment about a query
+  * @param {Object} query - Tweet place id
+  * @returns - Sentiment analysis
+  */
+  async sentiment (query) {
+    return await this.request(this.sentimentUrl, query)
+  }
+
+  /**
+  * @summary Returns the most frequent words about a query
+  * @param {Object} query - Tweet place id
+  * @returns - Frequency analysis
+  */
+  async termcloud (query) {
+    return await this.request(this.termCloudUrl, query)
+  }
+
+  /**
+  * @summary Make a contest search
+  * @param {Object} query - Contest query
+  */
+  async contest (query) {
+    return await this.request(this.contestUrl, query)
+  }
+
+  /**
+  * @summary Make a contest search
+  * @param {Object} query - Contest query
+  */
+  async trivia (query) {
+    return await this.request(this.triviaUrl, query)
+  }
+}
+
+export default Twitter
+</code></pre>
+  </article>
+</section>
+
+    
+
+
+  </div>
+
+  <br class="clear">
+
+  <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a>
+  </footer>
+
+  <script src="scripts/linenumber.js"></script>
+  <script src="scripts/pagelocation.js"></script>
+
+  
+
+</body>
+</html>

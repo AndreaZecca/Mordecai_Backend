@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+      Trivia - Documentation
+  </title>
+
+  <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+  <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+  
+
+  
+
+  <!-- start Mixpanel -->
+  <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+  0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+  for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+  mixpanel.init("1919205b2da72e4da3b9b6639b444d59");</script>
+  <!-- end Mixpanel -->
+</head>
+
+<body>
+  <svg style="display: none;">
+    <defs>
+      <symbol id="linkIcon" fill="#706d77" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger" class="navicon-button x">
+    <div class="navicon"></div>
+  </label>
+
+  <label for="nav-trigger" class="overlay"></label>
+
+  <div class="top-nav-wrapper">
+    <ul>
+      <li >
+        <a href="index.html">
+          
+            <svg fill="#6D6D6D" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          
+          
+        </a>
+      </li>
+
+      
+
+    </ul>
+  </div>
+
+  <nav>
+    <h3 class="reference-title">
+      Braintree SDK Client Reference
+    </h3>
+
+    
+
+    <h3>Classes</h3><ul><li id="Contest-nav"><a href="Contest.html">Contest</a><ul class='methods'><li data-type="method" id="Contest-searchContest-nav"><a href="Contest.html#.searchContest">searchContest</a></li><li data-type="method" id="Contest-abort-nav"><a href="Contest.html#abort">abort</a></li><li data-type="method" id="Contest-addProposal-nav"><a href="Contest.html#addProposal">addProposal</a></li><li data-type="method" id="Contest-addVoter-nav"><a href="Contest.html#addVoter">addVoter</a></li><li data-type="method" id="Contest-fetchProposals-nav"><a href="Contest.html#fetchProposals">fetchProposals</a></li><li data-type="method" id="Contest-fetchVotes-nav"><a href="Contest.html#fetchVotes">fetchVotes</a></li><li data-type="method" id="Contest-getVotes-nav"><a href="Contest.html#getVotes">getVotes</a></li><li data-type="method" id="Contest-init-nav"><a href="Contest.html#init">init</a></li><li data-type="method" id="Contest-live-nav"><a href="Contest.html#live">live</a></li></ul></li><li id="Core-nav"><a href="Core.html">Core</a><ul class='methods'><li data-type="method" id="Core-abortStream-nav"><a href="Core.html#abortStream">abortStream</a></li><li data-type="method" id="Core-createQueryV2-nav"><a href="Core.html#createQueryV2">createQueryV2</a></li><li data-type="method" id="Core-dayTweetCount-nav"><a href="Core.html#dayTweetCount">dayTweetCount</a></li><li data-type="method" id="Core-getGeo-nav"><a href="Core.html#getGeo">getGeo</a></li><li data-type="method" id="Core-getUserInfo-nav"><a href="Core.html#getUserInfo">getUserInfo</a></li><li data-type="method" id="Core-search-nav"><a href="Core.html#search">search</a></li><li data-type="method" id="Core-sentiment-nav"><a href="Core.html#sentiment">sentiment</a></li><li data-type="method" id="Core-singleTweet-nav"><a href="Core.html#singleTweet">singleTweet</a></li><li data-type="method" id="Core-stream-nav"><a href="Core.html#stream">stream</a></li><li data-type="method" id="Core-termcloud-nav"><a href="Core.html#termcloud">termcloud</a></li></ul></li><li id="Paginator-nav"><a href="Paginator.html">Paginator</a><ul class='methods'><li data-type="method" id="Paginator-getNewest-nav"><a href="Paginator.html#getNewest">getNewest</a></li><li data-type="method" id="Paginator-getOldest-nav"><a href="Paginator.html#getOldest">getOldest</a></li><li data-type="method" id="Paginator-getTweets-nav"><a href="Paginator.html#getTweets">getTweets</a></li><li data-type="method" id="Paginator-handleError-nav"><a href="Paginator.html#handleError">handleError</a></li><li data-type="method" id="Paginator-next-nav"><a href="Paginator.html#next">next</a></li><li data-type="method" id="Paginator-prev-nav"><a href="Paginator.html#prev">prev</a></li></ul></li><li id="Participant-nav"><a href="Participant.html">Participant</a><ul class='methods'><li data-type="method" id="Participant-addVote-nav"><a href="Participant.html#addVote">addVote</a></li><li data-type="method" id="Participant-getProposal-nav"><a href="Participant.html#getProposal">getProposal</a></li><li data-type="method" id="Participant-getVotes-nav"><a href="Participant.html#getVotes">getVotes</a></li><li data-type="method" id="Participant-removeVote-nav"><a href="Participant.html#removeVote">removeVote</a></li></ul></li><li id="Player-nav"><a href="Player.html">Player</a><ul class='methods'><li data-type="method" id="Player-addAnswer-nav"><a href="Player.html#addAnswer">addAnswer</a></li><li data-type="method" id="Player-fetchUsername-nav"><a href="Player.html#fetchUsername">fetchUsername</a></li><li data-type="method" id="Player-getAnswer-nav"><a href="Player.html#getAnswer">getAnswer</a></li><li data-type="method" id="Player-getUsername-nav"><a href="Player.html#getUsername">getUsername</a></li></ul></li><li id="Query-nav"><a href="Query.html">Query</a><ul class='methods'><li data-type="method" id="Query-addField-nav"><a href="Query.html#addField">addField</a></li><li data-type="method" id="Query-appendString-nav"><a href="Query.html#appendString">appendString</a></li><li data-type="method" id="Query-get-nav"><a href="Query.html#get">get</a></li></ul></li><li id="QueryBuilder-nav"><a href="QueryBuilder.html">QueryBuilder</a><ul class='methods'><li data-type="method" id="QueryBuilder-build-nav"><a href="QueryBuilder.html#build">build</a></li><li data-type="method" id="QueryBuilder-setExpansion-nav"><a href="QueryBuilder.html#setExpansion">setExpansion</a></li><li data-type="method" id="QueryBuilder-setGeocode-nav"><a href="QueryBuilder.html#setGeocode">setGeocode</a></li><li data-type="method" id="QueryBuilder-setKeyword-nav"><a href="QueryBuilder.html#setKeyword">setKeyword</a></li><li data-type="method" id="QueryBuilder-setUsername-nav"><a href="QueryBuilder.html#setUsername">setUsername</a></li></ul></li><li id="queryDirector-nav"><a href="queryDirector.html">queryDirector</a></li><li id="Question-nav"><a href="Question.html">Question</a><ul class='methods'><li data-type="method" id="Question-checkDeadline-nav"><a href="Question.html#checkDeadline">checkDeadline</a></li><li data-type="method" id="Question-checkSolution-nav"><a href="Question.html#checkSolution">checkSolution</a></li><li data-type="method" id="Question-getDeadline-nav"><a href="Question.html#getDeadline">getDeadline</a></li><li data-type="method" id="Question-getName-nav"><a href="Question.html#getName">getName</a></li><li data-type="method" id="Question-getOptions-nav"><a href="Question.html#getOptions">getOptions</a></li><li data-type="method" id="Question-getSolution-nav"><a href="Question.html#getSolution">getSolution</a></li><li data-type="method" id="Question-getText-nav"><a href="Question.html#getText">getText</a></li><li data-type="method" id="Question-searchSolution-nav"><a href="Question.html#searchSolution">searchSolution</a></li><li data-type="method" id="Question-setSolution-nav"><a href="Question.html#setSolution">setSolution</a></li></ul></li><li id="Trivia-nav"><a href="Trivia.html">Trivia</a><ul class='methods'><li data-type="method" id="Trivia-checkTrivia-nav"><a href="Trivia.html#.checkTrivia">checkTrivia</a></li><li data-type="method" id="Trivia-abort-nav"><a href="Trivia.html#abort">abort</a></li><li data-type="method" id="Trivia-addPlayer-nav"><a href="Trivia.html#addPlayer">addPlayer</a></li><li data-type="method" id="Trivia-addQuestion-nav"><a href="Trivia.html#addQuestion">addQuestion</a></li><li data-type="method" id="Trivia-fetchPlayers-nav"><a href="Trivia.html#fetchPlayers">fetchPlayers</a></li><li data-type="method" id="Trivia-fetchQuestions-nav"><a href="Trivia.html#fetchQuestions">fetchQuestions</a></li><li data-type="method" id="Trivia-getPlayers-nav"><a href="Trivia.html#getPlayers">getPlayers</a></li><li data-type="method" id="Trivia-getQuestionResults-nav"><a href="Trivia.html#getQuestionResults">getQuestionResults</a></li><li data-type="method" id="Trivia-getQuestions-nav"><a href="Trivia.html#getQuestions">getQuestions</a></li><li data-type="method" id="Trivia-getScores-nav"><a href="Trivia.html#getScores">getScores</a></li><li data-type="method" id="Trivia-init-nav"><a href="Trivia.html#init">init</a></li><li data-type="method" id="Trivia-live-nav"><a href="Trivia.html#live">live</a></li></ul></li><li id="Twitter-nav"><a href="Twitter.html">Twitter</a><ul class='methods'><li data-type="method" id="Twitter-contest-nav"><a href="Twitter.html#contest">contest</a></li><li data-type="method" id="Twitter-countTweets-nav"><a href="Twitter.html#countTweets">countTweets</a></li><li data-type="method" id="Twitter-geo-nav"><a href="Twitter.html#geo">geo</a></li><li data-type="method" id="Twitter-geoId-nav"><a href="Twitter.html#geoId">geoId</a></li><li data-type="method" id="Twitter-nextTweets-nav"><a href="Twitter.html#nextTweets">nextTweets</a></li><li data-type="method" id="Twitter-request-nav"><a href="Twitter.html#request">request</a></li><li data-type="method" id="Twitter-search-nav"><a href="Twitter.html#search">search</a></li><li data-type="method" id="Twitter-sentiment-nav"><a href="Twitter.html#sentiment">sentiment</a></li><li data-type="method" id="Twitter-singleTweet-nav"><a href="Twitter.html#singleTweet">singleTweet</a></li><li data-type="method" id="Twitter-stream-nav"><a href="Twitter.html#stream">stream</a></li><li data-type="method" id="Twitter-termcloud-nav"><a href="Twitter.html#termcloud">termcloud</a></li><li data-type="method" id="Twitter-trivia-nav"><a href="Twitter.html#trivia">trivia</a></li><li data-type="method" id="Twitter-user-nav"><a href="Twitter.html#user">user</a></li><li data-type="method" id="Twitter-userById-nav"><a href="Twitter.html#userById">userById</a></li><li data-type="method" id="Twitter-userTweets-nav"><a href="Twitter.html#userTweets">userTweets</a></li></ul></li><li id="User-nav"><a href="User.html">User</a><ul class='methods'><li data-type="method" id="User-getId-nav"><a href="User.html#getId">getId</a></li></ul></li><li id="V1Builder-nav"><a href="V1Builder.html">V1Builder</a><ul class='methods'><li data-type="method" id="V1Builder-setExpansion-nav"><a href="V1Builder.html#setExpansion">setExpansion</a></li><li data-type="method" id="V1Builder-setGeocode-nav"><a href="V1Builder.html#setGeocode">setGeocode</a></li><li data-type="method" id="V1Builder-setKeyword-nav"><a href="V1Builder.html#setKeyword">setKeyword</a></li><li data-type="method" id="V1Builder-setUsername-nav"><a href="V1Builder.html#setUsername">setUsername</a></li></ul></li><li id="V2Builder-nav"><a href="V2Builder.html">V2Builder</a><ul class='methods'><li data-type="method" id="V2Builder-setExpansion-nav"><a href="V2Builder.html#setExpansion">setExpansion</a></li><li data-type="method" id="V2Builder-setGeocode-nav"><a href="V2Builder.html#setGeocode">setGeocode</a></li><li data-type="method" id="V2Builder-setKeyword-nav"><a href="V2Builder.html#setKeyword">setKeyword</a></li><li data-type="method" id="V2Builder-setUsername-nav"><a href="V2Builder.html#setUsername">setUsername</a></li></ul></li><li id="Voter-nav"><a href="Voter.html">Voter</a><ul class='methods'><li data-type="method" id="Voter-addVote-nav"><a href="Voter.html#addVote">addVote</a></li></ul></li></ul>
+  </nav>
+
+  <div id="main">
+    
+      <h1 class="page-title">
+        Trivia
+      </h1>
+    
+
+    
+
+<section>
+  <header>
+    
+      <h2>
+        
+        Trivia
+        
+      </h2>
+
+      
+        <div class="class-description">
+          Trivia class
+This class manages a Trivia game using twitter
+        </div>
+      
+    
+  </header>
+
+  <article>
+    <div class="container-overview">
+      
+        
+
+
+  
+    <h2>Constructor</h2>
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#Trivia">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="Trivia">
+      <span class="type-signature"></span>new Trivia<span class="signature">()</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="trivia.js.html">trivia.js</a>, <a href="trivia.js.html#line14">line 14</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+      <h3 class="subsection-title">Methods</h3>
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.checkTrivia">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id=".checkTrivia">
+      <span class="type-signature">(async, static) </span>checkTrivia<span class="signature">(name)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+    <p class="summary">
+      Check if the Trivia exists
+    </p>
+  
+
+
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>name</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          Trivia name
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="trivia.js.html">trivia.js</a>, <a href="trivia.js.html#line141">line 141</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#abort">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="abort">
+      <span class="type-signature"></span>abort<span class="signature">()</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+    <p class="summary">
+      Abort the live trivia
+    </p>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="trivia.js.html">trivia.js</a>, <a href="trivia.js.html#line227">line 227</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#addPlayer">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="addPlayer">
+      <span class="type-signature">(async) </span>addPlayer<span class="signature">(player)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+    <p class="summary">
+      Add a player to the trivia
+    </p>
+  
+
+
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>player</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Object
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          Player to add
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="trivia.js.html">trivia.js</a>, <a href="trivia.js.html#line93">line 93</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#addQuestion">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="addQuestion">
+      <span class="type-signature">(async) </span>addQuestion<span class="signature">(question)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+    <p class="summary">
+      Load all the proposal for the contest
+    </p>
+  
+
+
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>question</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Object
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          Question to add
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="trivia.js.html">trivia.js</a>, <a href="trivia.js.html#line111">line 111</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#fetchPlayers">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="fetchPlayers">
+      <span class="type-signature">(async) </span>fetchPlayers<span class="signature">()</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+    <p class="summary">
+      Load the trivia players
+    </p>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="trivia.js.html">trivia.js</a>, <a href="trivia.js.html#line71">line 71</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#fetchQuestions">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="fetchQuestions">
+      <span class="type-signature">(async) </span>fetchQuestions<span class="signature">()</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+    <p class="summary">
+      Load the trivia questions
+    </p>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="trivia.js.html">trivia.js</a>, <a href="trivia.js.html#line56">line 56</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#getPlayers">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="getPlayers">
+      <span class="type-signature"></span>getPlayers<span class="signature">()</span><span class="type-signature"> &rarr; {Object}</span>
+    </h4>
+  </span>
+
+  
+    <p class="summary">
+      Return the players in the trivia
+    </p>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="trivia.js.html">trivia.js</a>, <a href="trivia.js.html#line48">line 48</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#getQuestionResults">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="getQuestionResults">
+      <span class="type-signature"></span>getQuestionResults<span class="signature">(questionName)</span><span class="type-signature"> &rarr; {Object}</span>
+    </h4>
+  </span>
+
+  
+    <p class="summary">
+      Get the answers given to a question
+    </p>
+  
+
+
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>questionName</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          name of the question
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="trivia.js.html">trivia.js</a>, <a href="trivia.js.html#line205">line 205</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#getQuestions">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="getQuestions">
+      <span class="type-signature"></span>getQuestions<span class="signature">()</span><span class="type-signature"> &rarr; {Object}</span>
+    </h4>
+  </span>
+
+  
+    <p class="summary">
+      Return the questions in the trivia
+    </p>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="trivia.js.html">trivia.js</a>, <a href="trivia.js.html#line39">line 39</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#getScores">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="getScores">
+      <span class="type-signature"></span>getScores<span class="signature">()</span><span class="type-signature"> &rarr; {Object}</span>
+    </h4>
+  </span>
+
+  
+    <p class="summary">
+      Get the scores of all players
+    </p>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="trivia.js.html">trivia.js</a>, <a href="trivia.js.html#line188">line 188</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#init">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="init">
+      <span class="type-signature">(async) </span>init<span class="signature">()</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+    <p class="summary">
+      Initialize the trivia
+    </p>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="trivia.js.html">trivia.js</a>, <a href="trivia.js.html#line29">line 29</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#live">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="live">
+      <span class="type-signature"></span>live<span class="signature">(votes)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+    <p class="summary">
+      Go live with the Trivia.
+    </p>
+  
+
+
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>votes</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Object
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          Real time Answer to update
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="trivia.js.html">trivia.js</a>, <a href="trivia.js.html#line154">line 154</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    
+
+    
+
+    
+  </article>
+</section>
+
+
+
+
+  </div>
+
+  <br class="clear">
+
+  <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a>
+  </footer>
+
+  <script src="scripts/linenumber.js"></script>
+  <script src="scripts/pagelocation.js"></script>
+
+  
+
+</body>
+</html>
